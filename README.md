@@ -1,1 +1,1 @@
-# simplify_baidu_index
+# simplify baidu index page
