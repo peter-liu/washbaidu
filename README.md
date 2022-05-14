@@ -1,3 +1,3 @@
-# Simplify baidu index page
+# Simplify&Customize search index
 
-![image](https://user-images.githubusercontent.com/1983142/168427480-add2d9ab-56e6-490c-87eb-761ecfb1c68d.png)
+![image](https://user-images.githubusercontent.com/1983142/168427563-66a31d00-70f4-4024-8009-2011fb850820.png)
