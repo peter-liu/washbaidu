@@ -3,7 +3,7 @@
 .bdsug.bdsug-new{ border-radius:0px !important; }
 .s-bottom-layer-content {display: none;}
 .s-center-box {display: none;}
-body{ background-color: rgba(211, 211, 211, 0.30); }
+body{ background-color: rgba(211, 211, 211, 0.15) !important }
 div#bottom_layer, div#s_top_wrap, i.quickdelete-line, i.c-icon.quickdelete.c-color-gray2{ display:none; visibility: hidden; }
 div#s-hotsearch-wrapper {display: none;}
 div#s-top-left{ display:none; }
