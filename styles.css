@@ -1,0 +1,45 @@
+div#s-hotsearch-wrapper {display: none;}
+
+div#u1 {display: none;}
+
+.s-center-box {display: none;}
+
+.s-bottom-layer-content {display: none;}
+
+div#s_side_wrapper {display: none;}
+
+input#kw {border-radius: 0 0 0 0;}
+
+input#su {border-radius: 0px !important;background-color: #1768ff !important;border-width: thin !important;height: 42px !important;
+}
+
+input#kw {border-radius: 0px !important;border-color: #1768ff !important;border-width: thin !important;}
+
+span.ipt_rec {display: none !important;}
+
+span.soutu-btn {display: none !important;}
+
+img#s_lg_img_new {
+	content:url('chrome-extension://__MSG_@@extension_id__/kino.png');
+}
+
+div#s-top-left{
+	display:none;
+}
+img#s_lg_img_new{
+	width:260px  !important;
+	height:120px !important;
+	bottom:0px   !important;
+	margin-left:-130px   !important;
+}
+
+#head_wrapper #kw:focus{
+	border-color:#1768ff !important;
+}
+
+#head_wrapper .s_btn{
+	_font-family:Roboto, Arial, sans-serif;
+	font-weight:normal;
+	color:rgb(23, 104, 255) !important;
+}
+
