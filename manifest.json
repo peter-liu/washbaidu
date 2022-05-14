@@ -7,9 +7,6 @@
     "css": ["styles.css"],
     "matches": ["https://www.baidu.com/*"]
   }],
-  "permissions": [
-    "https://www.baidu.com/"
-  ],
   "web_accessible_resources": [
     {
       "resources": [ "kino.png" ],
