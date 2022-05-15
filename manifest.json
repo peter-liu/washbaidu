@@ -1,17 +1,26 @@
 {
-  "name": "Tweak Baidu.com",
-  "description": "test",
-  "version": "1.0",
-  "manifest_version": 3,
-  "content_scripts": [{
-    "css": ["styles.css"],
-    "matches": ["https://www.baidu.com/*"]
-  }],
-  "web_accessible_resources": [
-    {
-      "resources": [ "kino.png" ],
-      "matches": [ "https://www.baidu.com/*" ]
-    }
-  ]
+    "name": "Tweak Baidu.com",
+    "description": "test",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "matches": [
+                "https://www.baidu.com/*"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "kino.png"
+            ],
+            "matches": [
+                "https://www.baidu.com/*"
+            ]
+        }
+    ]
 }
-
