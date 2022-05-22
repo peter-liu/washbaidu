@@ -47,6 +47,10 @@ a#result_logo .index-logo-srcnew{
     margin-top: -10px;
 }	
 
+a#result_logo{
+	padding-left:130px;
+}
+
 div#content_left div[style*="visible !imp"] {
     color: red !important;
     border:3px solid blue;
@@ -103,10 +107,6 @@ div.result-molecule.new-pmd[tpl*="app/rs"]{
 }
 .head_wrapper{
     background-color:none;
-}
-
-.wrapper_new .s_form{
-	padding-left: 147px !important;
 }
 
 .result-op.c-container.new-pmd[tpl*="recommend_list"]{
