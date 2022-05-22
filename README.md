@@ -1,8 +1,12 @@
-# Simplify&Customize Search Index
+# Wash Baidu!
 
-## before 
-  ![image](https://user-images.githubusercontent.com/1983142/169687678-c4b2502e-80d6-4a4d-bda3-dd3d1a0eb2b1.png)
 
-## After
-  ![image](https://user-images.githubusercontent.com/1983142/169687766-92a093e4-298b-4afe-8c1d-94e2400e6a33.png)
+## Washed 
+  ![image](https://user-images.githubusercontent.com/1983142/169694711-c0dbb37f-5ade-4560-b5a2-0786cc99703d.png)
 
+  ![image](https://user-images.githubusercontent.com/1983142/169694706-0839474f-a7ce-4d8a-8e2a-ff3c010b79d5.png)
+
+## Unwashed
+  ![image](https://user-images.githubusercontent.com/1983142/169694670-17221b9a-17c1-439a-8d66-9801ef5455a7.png)
+
+  ![image](https://user-images.githubusercontent.com/1983142/169694675-b021ddde-6812-4aba-a721-4acadd60773e.png)
