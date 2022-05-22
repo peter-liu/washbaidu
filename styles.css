@@ -17,3 +17,192 @@ input#su {border-radius: 0px !important;background-color: #1768ff !important; }
 span.ipt_rec {display: none !important;}
 span.soutu-btn {display: none !important;}
 #head_wrapper .s-p-top{ padding-top:45px;margin-bottom:15px}
+
+
+
+span.bg.s_ipt_wr.new-pmd.quickdelete-wrap {border-radius: 0px;}
+
+div#content_right {display: none;}
+
+div#content_left {width: 960px !important;}
+
+.new-pmd.c-container {width: 960px !important;}
+
+.new-pmd .c-span9 {width: 800px;}
+
+.page_2muyV strong, .page_2muyV a {color: #1768ff;border-radius: 0px;}
+
+.s_form.s_form_nologin {background-color: none;}
+
+div#u {display: none;}
+
+a#result_logo {visibility: hidden;}
+
+div#content_left div[style*="visible !imp"] {
+    color: red !important;
+    border:3px solid blue;
+    width:0px;
+    height:0px;
+    overflow:hidden;
+    border:0px;
+}
+
+*{
+    font-family:'PingFang SC', 'Merriweather', serif !important
+}
+
+div,img,span,a{
+    border-radius:0px !important;
+}
+
+a{
+    color:#424242db !important;
+    text-decoration:none !important;
+}
+
+a em, em{
+    color:#1768ff !important;
+    text-decoration:none !important;
+}
+
+
+.c-gap-top-xsmall{
+    display:none;
+}
+
+.result-op.c-container.xpath-log.new-pmd[tpl*="poi_mapdots"]{
+    display:none;
+}
+
+.c-gap-top.ec-material_list-item.ec-block-material_list-1{
+    display:none;
+}
+
+.new-pmd[tpl*="search-tool"]{
+    visibility:hidden;
+    border:1px solid gray;
+}
+
+div.result-molecule.new-pmd[tpl*="app/rs"]{
+     display:none;
+}
+
+.s_tab_inner{
+    padding-top:15px;
+}
+.head_wrapper{
+    background-color:none;
+}
+
+.result-op.c-container.new-pmd[tpl*="recommend_list"]{
+    display:none;
+}
+
+div.result-molecule.new-pmd[tpl*="app/hit-top-new"]{
+    display:none;
+}
+
+div.result.c-container.xpath-log.new-pmd[tpl*="se_com_default"]{
+    border-bottom:1px solid #d3d3d3a1;
+    padding-top:2px;
+    padding-bottom:25px;
+}
+
+
+.c-span3{
+   display:none;
+}
+
+#su{
+    color:#1768ff;
+}
+
+
+
+#page strong{
+     border-radius:0px !important;
+}
+
+
+
+#foot{
+    display:none;
+}
+
+.result-op.c-container.xpath-log.new-pmd[tpl="tieba_general"]{
+    display:none;
+}
+
+.result-op.c-container.xpath-log.new-pmd[tpl="short_video"]{
+    display:none;
+}
+
+.result-op.c-container.xpath-log.new-pmd[tpl="jy_course_and_org_pc_new"]{
+    display:none;
+}
+
+.result-op.c-container[tpl="qidian2"]{
+   display:none;
+}
+
+.result.c-container.new-pmd[tpl="se_com_default"][data-click='{']{
+    display:none;
+}
+
+.c-row.c-gap-top-middle > div{
+    width:100%;
+}
+
+.c-row.c-gap-top-small > div{
+    width:100%;
+}
+
+.c-border{
+    margin:auto !important;
+}
+
+.result-op.c-container.new-pmd[tpl='dict3']{
+    padding-top:2px;
+    padding-bottom:25px;
+    border-bottom: 1px solid #d3d3d3a1;
+}
+
+.s-tab-item:before{
+    content:'' !important;    
+}
+
+.cur-tab:before{
+    content:'' !important;    
+}
+
+.c-tools .c-icon{
+    display:none;
+}
+
+i.c-icon{
+    display:none;
+}
+
+
+.c-span-last.c-span9.ec-pc_horizontal_container-item.ec-block-pc_horizontal_container-1{
+	width:100%;
+}
+
+.result-op.c-container.new-pmd[tpl*='vmp_zxenterprise'],
+.result-op.c-container.new-pmd[tpl='news-realtime'],
+.result-op.c-container.new-pmd[tpl='bk_polysemy']{
+    padding-top:2px;
+    padding-bottom:28px;
+    border-bottom: 1px solid #d3d3d3a1;
+}
+
+
+.result-op.c-container.new-pmd[tpl='news-realtime'] div[class*="single-card-wrapper"]{
+	margin-left:0px;
+
+}
+
+
+.ec-pc_comp_d20_title-official-icon{
+	color:white !important;
+}
