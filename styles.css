@@ -10,7 +10,12 @@ div#s-top-left{ display:none; }
 div#s_side_wrapper {display: none;}
 div#u1 {display: none;}
 img#s_lg_img_new { content:url('chrome-extension://__MSG_@@extension_id__/kino.png'); }
-img#s_lg_img_new{ width:260px  !important; height:120px !important; bottom:0px   !important; margin-left:-130px   !important; }
+img#s_lg_img_new{ 
+	width: 160px !important;
+	height: auto !important; 
+	bottom:0px   !important; 
+	margin-left:-90px   !important; 
+}
 input#kw {border-radius: 0 0 0 0;}
 input#kw {border-radius: 0px !important;border-color: #1768ff !important;}
 input#su {border-radius: 0px !important;background-color: #1768ff !important; }
