@@ -22,26 +22,30 @@ input#su {border-radius: 0px !important;background-color: #1768ff !important; }
 span.ipt_rec {display: none !important;}
 span.soutu-btn {display: none !important;}
 #head_wrapper .s-p-top{ padding-top:45px;margin-bottom:15px}
-
-
-
 span.bg.s_ipt_wr.new-pmd.quickdelete-wrap {border-radius: 0px;}
-
 div#content_right {display: none;}
-
-div#content_left {width: 960px !important;}
-
-.new-pmd.c-container {width: 960px !important;}
-
+div#content_left {width: 780px !important;}
+.new-pmd.c-container {width: 780px !important;}
 .new-pmd .c-span9 {width: 800px;}
-
+div[class*="single-card-wrapper"] .c-span9{
+	width:100% !important;
+}
+.c-title.tts-title{
+	padding-bottom:7px;
+}
 .page_2muyV strong, .page_2muyV a {color: #1768ff;border-radius: 0px;}
-
-.s_form.s_form_nologin {background-color: none;}
+.s_form.s_form_nologin {
+   background-color: none;
+}
 
 div#u {display: none;}
 
-a#result_logo {visibility: hidden;}
+a#result_logo .index-logo-srcnew{
+    content:url('chrome-extension://__MSG_@@extension_id__/kino.png');
+    width: 52px;
+    height: auto;
+    margin-top: -10px;
+}	
 
 div#content_left div[style*="visible !imp"] {
     color: red !important;
@@ -56,7 +60,9 @@ div#content_left div[style*="visible !imp"] {
     font-family:'PingFang SC', 'Merriweather', serif !important
 }
 
-div,img,span,a{
+div,img,span,a,
+.c-btn-primary
+{
     border-radius:0px !important;
 }
 
@@ -99,6 +105,10 @@ div.result-molecule.new-pmd[tpl*="app/rs"]{
     background-color:none;
 }
 
+.wrapper_new .s_form{
+	padding-left: 147px !important;
+}
+
 .result-op.c-container.new-pmd[tpl*="recommend_list"]{
     display:none;
 }
@@ -109,7 +119,7 @@ div.result-molecule.new-pmd[tpl*="app/hit-top-new"]{
 
 div.result.c-container.xpath-log.new-pmd[tpl*="se_com_default"]{
     border-bottom:1px solid #d3d3d3a1;
-    padding-top:2px;
+    padding-top:0px;
     padding-bottom:25px;
 }
 
@@ -134,19 +144,18 @@ div.result.c-container.xpath-log.new-pmd[tpl*="se_com_default"]{
     display:none;
 }
 
-.result-op.c-container.xpath-log.new-pmd[tpl="tieba_general"]{
-    display:none;
-}
-
-.result-op.c-container.xpath-log.new-pmd[tpl="short_video"]{
-    display:none;
-}
-
+.result-op.c-container.xpath-log.new-pmd[tpl="tieba_general"],
+.result-op.c-container.xpath-log.new-pmd[tpl="tieba_offical"],
+.result-op.c-container.xpath-log.new-pmd[tpl="sp_hot_sale"],
+.result-op.c-container.xpath-log.new-pmd[tpl="b2b_prod"],
+.result-op.c-container.xpath-log.new-pmd[tpl="short_video"],
 .result-op.c-container.xpath-log.new-pmd[tpl="jy_course_and_org_pc_new"]{
     display:none;
 }
 
-.result-op.c-container[tpl="qidian2"]{
+.result-op.c-container[tpl="qidian2"],
+.result-op.c-container[tpl="accuratebook"]
+{
    display:none;
 }
 
@@ -166,8 +175,9 @@ div.result.c-container.xpath-log.new-pmd[tpl*="se_com_default"]{
     margin:auto !important;
 }
 
-.result-op.c-container.new-pmd[tpl='dict3']{
-    padding-top:2px;
+.result-op.c-container.new-pmd[tpl='dict3'],
+.result-op.c-container.new-pmd[tpl='img_normal']{
+    padding-top:0px;
     padding-bottom:25px;
     border-bottom: 1px solid #d3d3d3a1;
 }
@@ -196,11 +206,14 @@ i.c-icon{
 .result-op.c-container.new-pmd[tpl*='vmp_zxenterprise'],
 .result-op.c-container.new-pmd[tpl='news-realtime'],
 .result-op.c-container.new-pmd[tpl='bk_polysemy']{
-    padding-top:2px;
-    padding-bottom:28px;
+    padding-top:0px;
+    padding-bottom:20px;
     border-bottom: 1px solid #d3d3d3a1;
 }
 
+.result-op.c-container.new-pmd[tpl='news-realtime']{
+   margin-top: -20px;
+}
 
 .result-op.c-container.new-pmd[tpl='news-realtime'] div[class*="single-card-wrapper"]{
 	margin-left:0px;
@@ -211,3 +224,11 @@ i.c-icon{
 .ec-pc_comp_d20_title-official-icon{
 	color:white !important;
 }
+
+span{ line-height:25px; }
+
+
+a.c-font-medium[class*='single-card-more']{
+  margin-top:0px;
+  margin-bottom:0px;
+}	
