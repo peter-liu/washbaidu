@@ -4,17 +4,6 @@
 
 作为老牌中文搜索引擎，百度的资源和可达性还是有一些价值，但真的是，太难看太多广告了，洗一下。
 
-
------
-
-- [Wash Baidu!](#wash-baidu-)
-  * [示例](#--)
-    + [洗之后](#洗之后)
-    + [洗之前](#洗之前)
-  * [启用步骤](#----)
-
-----
-
 ## 示例
 ### 洗之后
   ![image](https://user-images.githubusercontent.com/1983142/169694711-c0dbb37f-5ade-4560-b5a2-0786cc99703d.png)
@@ -27,7 +16,9 @@
   ![image](https://user-images.githubusercontent.com/1983142/169694675-b021ddde-6812-4aba-a721-4acadd60773e.png)
 
 ## 启用步骤
-TODO
+
+Chrome Store: \
+[TODO](https://chrome.google.com/webstore/detail/washbaidu/bhiodmiooehmkihcpibmohdpmblnmhdb?hl=en)
 
 ## TODO
  - [ ] config popup 
