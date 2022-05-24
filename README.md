@@ -28,3 +28,12 @@
 
 ## 启用步骤
 TODO
+
+## TODO
+ - [ ] config popup 
+ - [ ] dynamic style 
+ - [ ] optimize icons / descriptions / screenshots 
+ - [ ] 'haitun' version 
+ - [ ] configurable blocks/segments visibility
+ - [ ] customize color/style 
+ - [ ] material-ui color schema 
