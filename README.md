@@ -16,7 +16,8 @@
   ![image](https://user-images.githubusercontent.com/1983142/169694675-b021ddde-6812-4aba-a721-4acadd60773e.png)
 
 ## 安装
-<a href="[http://example.com/](https://chrome.google.com/webstore/detail/washbaidu/bhiodmiooehmkihcpibmohdpmblnmhdb?hl=en)" target="_blank">Chrome Store</a>
+
+<a href="https://chrome.google.com/webstore/detail/washbaidu/bhiodmiooehmkihcpibmohdpmblnmhdb?hl=en" target="_blank">Chrome Store</a>
 
 ## TODO
  - [ ] config popup 
