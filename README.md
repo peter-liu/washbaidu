@@ -17,8 +17,7 @@
 
 ## 启用步骤
 
-Chrome Store: \
-[TODO](https://chrome.google.com/webstore/detail/washbaidu/bhiodmiooehmkihcpibmohdpmblnmhdb?hl=en)
+[Chrome Store](https://chrome.google.com/webstore/detail/washbaidu/bhiodmiooehmkihcpibmohdpmblnmhdb?hl=en)
 
 ## TODO
  - [ ] config popup 
