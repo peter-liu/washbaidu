@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="button.css">
+    <style type="text/css">
+        button {
+          height: 30px;
+          width: 30px;
+          outline: none;
+          margin: 10px;
+          border: none;
+          border-radius: 2px;
+        }
+        
+        button.current {
+          box-shadow: 0 0 0 2px white,
+                      0 0 0 4px black;
+        }
+        body{
+            min-width:300px;
+            min-height:400px;
+        }
+
+        h2,h3{
+            padding-bottom:6px;
+            border-bottom:2px solid #4E6EF2;
+        }
+
+        /* From uiverse.io by @adamgiebl */
+        /* Customize the label (the container) */
+        .container {
+         display: block;
+         position: relative;
+         padding-left: 35px;
+         margin-bottom: 12px;
+         cursor: pointer;
+         font-size: 14px;
+         user-select: none;
+         width:80px;
+         display:inline-flex;
+        }
+        
+        /* Hide the browser's default checkbox */
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        
+        /* Create a custom checkbox */
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          background-color: #ccc;
+        }
+        
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+          background-color: #4E6EF2;
+        }
+        
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        /* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+          display: block;
+        }
+        
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+          left: 5px;
+          top: 1px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          transform: rotate(45deg);
+        }
+
+         /* From uiverse.io by @lenin55 */
+        
+         .cl-toggle-switch {
+           position: relative;
+           display:inline-flex;
+           width:100px;
+           margin-bottom: 12px;
+           margin-right: 16px;
+         }
+         .cl-toggle-switch span{
+             line-height:24px;
+         }
+
+         .cl-switch {
+          position: relative;
+          display: inline-block;
+         }
+         /* Input */
+         .cl-switch > input {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          z-index: -1;
+          position: absolute;
+          right: 6px;
+          top: -8px;
+          display: block;
+          margin: 0;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          background-color: rgb(0, 0, 0, 0.38);
+          outline: none;
+          opacity: 0;
+          transform: scale(1);
+          pointer-events: none;
+          transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+         }
+         /* Track */
+         .cl-switch > span::before {
+          content: "";
+          float: right;
+          display: inline-block;
+          margin: 5px 0 5px 10px;
+          border-radius: 7px;
+          width: 36px;
+          height: 14px;
+          background-color: rgb(0, 0, 0, 0.38);
+          vertical-align: top;
+          transition: background-color 0.2s, opacity 0.2s;
+         }
+         /* Thumb */
+         .cl-switch > span::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: 16px;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          transition: background-color 0.2s, transform 0.2s;
+         }
+         /* Checked */
+         .cl-switch > input:checked {
+          right: -10px;
+          background-color: #4E6EF2;
+         }
+         
+         .cl-switch > input:checked + span::before {
+          background-color: #4E6EF2;
+         }
+         
+         .cl-switch > input:checked + span::after {
+          background-color: #4E6EF2;
+          transform: translateX(16px);
+         }
+         /* Hover, Focus */
+         .cl-switch:hover > input {
+          opacity: 0.04;
+         }
+         
+         .cl-switch > input:focus {
+          opacity: 0.12;
+         }
+         
+         .cl-switch:hover > input:focus {
+          opacity: 0.16;
+         }
+         /* Active */
+         .cl-switch > input:active {
+          opacity: 1;
+          transform: scale(0);
+          transition: transform 0s, opacity 0s;
+         }
+         
+         .cl-switch > input:active + span::before {
+ background-color: #8f8f8f;
+}
+
+.cl-switch > input:checked:active + span::before {
+ background-color: #85b8b7;
+}
+         /* Disabled */
+         .cl-switch > input:disabled {
+          opacity: 0;
+         }
+         
+         .cl-switch > input:disabled + span::before {
+            background-color: #ddd;
+           }
+           
+           .cl-switch > input:checked:disabled + span::before {
+            background-color: #bfdbda;
+           }
+           
+           .cl-switch > input:checked:disabled + span::after {
+            background-color: #61b5b4;
+           }
+
+    </style>
+  </head>
+  <body >
+    <h3>主题</h3>
+    <div style="padding-left:20px;text-align:center">
+        <label class="container">
+           <input checked="checked" type="checkbox">
+           <span class="checkmark"></span>
+           龙猫
+         </label>
+
+        <label class="container">
+           <input  type="checkbox">
+           <span class="checkmark"></span>
+            海豚
+         </label>
+
+        <label class="container">
+           <input  type="checkbox">
+           <span class="checkmark"></span>
+            胖子
+         </label>
+
+        <label class="container">
+           <input  type="checkbox">
+           <span class="checkmark"></span>
+            糖果
+         </label>
+    </div>
+
+
+    <h3>开关</h3>
+    <div style="padding-left:20px;text-align:center">
+        <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>广&nbsp;&nbsp;&nbsp;&nbsp;告</span>
+           </label>
+         </div>   
+         <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>右边栏</span>
+           </label>
+         </div>
+
+         <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>图&nbsp;&nbsp;&nbsp;&nbsp;片</span>
+           </label>
+         </div>
+        
+         <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>百家号</span>
+           </label>
+         </div>   
+
+         <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>健&nbsp;&nbsp;&nbsp;&nbsp;康</span>
+           </label>
+         </div>
+        
+         <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>热&nbsp;&nbsp;&nbsp;&nbsp;卖</span>
+           </label>
+         </div>
+
+        <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>贴&nbsp;&nbsp;&nbsp;&nbsp;吧</span>
+           </label>
+         </div>
+
+        <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>采&nbsp;&nbsp;&nbsp;&nbsp;购</span>
+           </label>
+         </div> 
+
+        <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>资&nbsp;&nbsp;&nbsp;&nbsp;讯</span>
+           </label>
+         </div> 
+
+        <div class="cl-toggle-switch">
+           <label class="cl-switch">
+             <input type="checkbox">
+             <span>推&nbsp;&nbsp;&nbsp;&nbsp;荐</span>
+           </label>
+         </div> 
+
+    </div>
+
+
+    <h3>其它</h3>
+    <div style="padding-left:40px">
+        <a style="color:#4E6EF2;text-decoration:none" href="">详细配置</a>
+    </div>
+    <button style="display:none" id="changeColor">
+        BTN
+    </button>
+    <script src="popup.js"></script>
+  </body>
+</html>
