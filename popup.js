@@ -1,18 +1,35 @@
-// Initialize button with user's preferred color
-let changeColor = document.getElementById("changeColor");
+async function changeTheme(e){
+    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-changeColor.addEventListener('click', () => {
-    changeColor.style.backgroundColor = 'blue';
-});
+    let theme = e.target.getAttribute("theme");
+    let oldTheme = await chrome.storage.local.get("theme"); 
+    if(oldTheme.theme){
+       // remove css 
+        chrome.scripting.removeCSS({
+              files: ["themes/" + oldTheme.theme + "/styles.css"],
+              target: { tabId: tab.id }
+            }
+        )
+    }
 
-// chrome.storage.sync.get("color", ({ color }) => {
-//changeColor.addEventListener('click', function() {
-//    changeColor.style.backgroundColor = 'red';
-//});
+    chrome.scripting.insertCSS({
+      files: ["themes/" + theme + "/styles.css"],
+      target: { tabId: tab.id }
+    });
+    
 
-//changeColor.onClick = function(){
-//    alert(1);
-//    changeColor.style.backgroundColor = 'red';
-//};
+    chrome.storage.local.set({"theme":theme}); 
 
-// });
+}
+
+// document.getElementById("preference_btn").addEventListener('click', changeTheme);
+
+
+const collection = document.getElementsByClassName("predefine_theme");
+for (let i = 0; i < collection.length; i++) {
+    collection[i].addEventListener('click', changeTheme);
+}
+
+
+
+
