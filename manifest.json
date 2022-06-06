@@ -1,6 +1,6 @@
 {
     "name": "Washbaidu",
-    "description": "优化百度搜索界面，移除重度广告",
+    "description": "优化百度搜索界面，移除过度广告，提升百度体验。",
     "version": "1.1",
     "manifest_version": 3,
     "web_accessible_resources": [
@@ -28,7 +28,6 @@
     },
     "permissions": [
         "storage",
-        "activeTab",
         "scripting"
     ],
     "host_permissions": [

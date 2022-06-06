@@ -1,5 +1,8 @@
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.local.set({ switch:true });
+    chrome.storage.local.set({ switch:true });
+    
+    // demostrate after install
+    chrome.tabs.create({ url: "http://www.baidu.com/" });
 });
 
 async function hasHostPermission(tab){
@@ -28,8 +31,9 @@ chrome.tabs.onUpdated.addListener(async function (tabId, changeInfo, tab) {
         
         // check permission and renderring
         let hasPermission = await hasHostPermission(tab);
-        hasHostPermission &&
-            changeTheme(tabId, null, "totoro");
+        
+        // 采用await后, 显著的减少了css闪烁的问题 
+        await (hasHostPermission && changeTheme(tabId, null, "totoro"));
           
     }
 
